@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+    <title>Movie Tickets</title>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h1>Movies!</h1>
+
+      <p>Matinee Discount - ksh500 off</p>
+
+      <p>Senior Discount - ksh1000 off</p>
+
+      <p>New Releases - ksh1500 extra</p>
+
+      <div class="row">
+
+        <div class="col-md-6">
+
+          <form id="new-ticket">
+
+          <!-- First dropdown (Movie) -->
+
+          <h3>Select Your Movie:</h3>
+
+          <select class="form-control new-movie">
+
+            <option id="movie1" value="11">Scott Pilgrim vs. The World</option>
+
+            <option id="movie2" value="11">Lord of the Rings Epic Extended Edition Marathon</option>
+
+            <option id="movie3" value="13">Deadpool</option>
+
+            <option id="movie4" value="11">Happy Feet</option>
+
+            <option id="movie5" value="11">Harry Potter and the Sorcerer's Stone</option>
+
+          </select>
+
+          <!-- Second dropdown (Time) -->
+
+          <h3>Movie Times:</h3>
+
+          <select class="form-control new-time">
+
+            <option id="time1" value="-2">12 pm</option>
+
+            <option id="time2" value="-2">2 pm</option>
+
+            <option id="time3" value="0">5 pm</option>
+
+            <option id="time4" value="0">7 pm</option>
+
+            <option id="time5" value="0">10 pm</option>
+
+          </select>
+
+          <!-- Third dropdown (Age) -->
+
+          <h3>Age:</h3>
+
+          <select class="form-control new-age">
+
+            <option id="age1" value="0">0-12</option>
+
+            <option id="age2" value="0">13-17</option>
+
+            <option id="age3" value="0">18-64</option>
+
+            <option id="age4" value="-1">65+</option>
+
+          </select>
+
+          <button type="submit" class="btn btn-info">Submit</button>
+
+          </form>
+
+        </div>
+
+        <!-- First column ends -->
+
+        <div class="col-md-6">
+
+          <div id="show-ticket">
+
+            <h2>Your ticket price for</h2>
+
+            <h3></h3>
+
+            <h4></h4>
+
+            <h1 id="ticket-price"></h1>
+
+            <h5></h5>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
+
